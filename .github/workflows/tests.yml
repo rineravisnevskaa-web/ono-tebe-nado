@@ -1,6 +1,7 @@
 name: Tests
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - '**'
@@ -13,10 +14,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        
       - name: Check if the repository is private
+        if: ${{ github.event.repository.private }}
         run: exit 1
-        if: ${{github.event.repository.private}}
+        
       - name: Tests
-        uses: Yandex-Practicum/test-project-action@v1
+        uses: Ivanusdx/test-project-action@v1
         with:
-          project: 'ono-tebe-nado'
+          project: 'ono-tebe-nado_project'
