@@ -14,6 +14,7 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
+<!--            отступы между навигацией не по макету-->
             <a class="header__link header__link_active">главная</a>
           </li>
           <li class="header__links-list-item">
@@ -24,6 +25,7 @@
         </ul>
       </nav>
       <a class="header__logo">
+<!--        Ширина лого не по макету (по данным Pixel Perfect)-->
         <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип шапки">
       </a>
       <address class="header__address">
@@ -34,8 +36,10 @@
       </address>
     </header>
     <main>
+<!--      Высота секции не по макету, лучше ограничить ее максимальную высоту-->
       <section class="cover">
         <div class="overlay"></div>
+        <!--      Отступы между тайтлами не по макету-->
         <h1 class="cover__title">
           <span class="aligned-text">О
             <span class="letter-spacing-extended">н</span>
@@ -103,6 +107,9 @@
         <a href="#" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about" id="about">
+<!--        Имя класса не по правилам методологии БЭМ, для удобства можно использовать:
+            https://nglazov.github.io/bem-validator-page/
+-->
         <article class="logo__column">
           <div class="about__logo">
             <img class="about__logo-image" src="./images/logo-white.svg" alt="Логотип сайта">
