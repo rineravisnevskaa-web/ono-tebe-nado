@@ -1,6 +1,6 @@
 
 .header {
-    padding: 92px 24px 96px;
+    padding: 92px 24px 91px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
@@ -16,7 +16,17 @@
 .header__links-list {
     display: flex;
     list-style: circle;
-    gap: 26px;
+    gap: 32px;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.header__link {
+    letter-spacing: 1%;
+}
+
+.header__link_active {
+    letter-spacing: 0%;
 }
 
 .header__links-list-item_no-bullit {
@@ -25,7 +35,7 @@
 
 .header__logo {
     display: block;
-    width: 148px;
+    width: 138px;
 }
 .header__logo-image {
     width: 100%;
@@ -36,6 +46,9 @@
     width: 240px;
     justify-self: end;
     margin-right: 25px;
+    line-height: 24.3px;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 .cover {
@@ -58,14 +71,14 @@
 }
 
 .cover__title {
-    padding: 165px 50px 147px;
+    padding: 165px 50px 138px;
     font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    row-gap: 20px;
+    row-gap: 9px;
     z-index: 2;
     letter-spacing: 30%;
 }
@@ -95,6 +108,7 @@
     grid-row: 3;
     justify-self: end;
     overflow: hidden;
+    margin-top: -6px;
 } 
 
 .letter-spacing-extended {
@@ -110,12 +124,13 @@
 
 .cover__description {
     display: flex;
-    padding: 0 50px 62px 78px;
+    padding: 0 50px 40px 78px;
     justify-content: space-between;
 }
 
 .cover__description-text {
     word-spacing: 18px;
+    line-height: 28px;
 }
 
 .bet-button {
@@ -138,13 +153,14 @@
 }
 
 .lots {
-    padding: 0 24px 146px;
+    padding: 0 24px 150px;
 }
 
 .lots__heading {
     font-weight: 700;
     text-transform: uppercase;
     padding-left: 40px;
+    font-size: 40px;
 }
 
 .lots__card-list {
@@ -156,7 +172,7 @@
 }
 
 .lots__card-list-item {
-    min-height: 563px;
+    min-height: 550px;
     flex-grow: 1;
     max-width: 334px;
 }
@@ -208,20 +224,25 @@
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
     z-index: 2;
+    line-height: 120%;
 }
 
 .card__text {
     font-size: 20px;
     font-weight: 400;
     z-index: 2;
+    line-height: 120%;
 }
 
 .lots__look-more-link {
     display: block;
     font-weight: 400;
     font-size: 20px;
-    padding-top: 30px;
+    padding-top: 29px;
     padding-left: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
 }
 
 .about {
@@ -233,7 +254,7 @@
 }
 
 .logo__column {
-    padding-top: 35px;
+    padding-top: 32px;
 }
 
 .about__logo {
@@ -264,15 +285,17 @@
 .about__text {
     font-size: 20px;
     font-weight: 400;
+    line-height: 24px;
 }
 
 .about__text:first-of-type {
     padding-bottom: 24px;
     padding-right: 5px;
+    letter-spacing: 1%;
 }
 
 .footer {
-    padding: 180px 26px 88px;
+    padding: 181px 26px 88px;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
@@ -281,10 +304,18 @@
 
 .address {
     font-style: normal;
+    padding-left: 24px;
+    line-height: 24.3px;
+    letter-spacing: 1%;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
 }
 
 .footer__menu {
+    padding-left: 32px;
     text-align: center; 
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
 }
 
 .footer__menu-list {
@@ -295,6 +326,7 @@
     display: flex;
     list-style: none;
     gap: 48px;
+    padding-right: 24px;
 }
 
 .footer__social-icon {
