@@ -1,1 +1,1 @@
-https://github.com/rineravisnevskaa-web/ono-tebe-nado-ad
+https://github.com/rineravisnevskaa-web/ono-tebe-nado
